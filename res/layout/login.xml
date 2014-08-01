@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    android:orientation="vertical"
+    tools:context=".Login" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/dl_logo_homepage" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Fone"
+        android:layout_marginLeft="5dp"
+         android:layout_marginTop="25dp"
+         android:textColor="#FFFFFF"
+         android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:singleLine="true">
+    </EditText>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:layout_marginLeft="5dp"
+         android:textColor="#FFFFFF"
+         android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+		android:inputType="textPassword"
+		android:textColor="#ffffff"
+		android:background="#CECECE"
+		android:textSize="20dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:drawablePadding="20dp"
+        android:textColorHighlight="#33ccff"
+        android:text="@string/entrar"/>
+    
+    
+    <Button
+        android:id="@+id/btn_password_recovery"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        android:text="@string/esqueceu_senha"
+        android:textColor="#FFFFFF"
+        android:background="#0000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom" >
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Copyright © 2014-Dribble Logics"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+    
+</LinearLayout>

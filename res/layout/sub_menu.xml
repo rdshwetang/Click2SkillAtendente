@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu" >
+
+   <LinearLayout
+       android:id="@+id/linearlayout1"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:background="@drawable/main"
+       android:orientation="vertical" >
+
+       <include android:layout_width="match_parent"
+       		 	android:layout_height="50dp"
+         		layout="@layout/header_titlebar" />
+
+       	 <ListView
+       	     android:id="@+id/list_sub_menu"
+       	     android:layout_width="match_parent"
+       	     android:layout_height="438dp"
+       	     android:background="#0000"
+       	     android:layout_weight="1.0"
+       	     android:textColor="@android:color/black" >
+
+         </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

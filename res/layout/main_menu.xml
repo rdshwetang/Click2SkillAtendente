@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu" >
+   <LinearLayout android:id="@+id/linearlayout1"
+       android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical"
+         android:background="@drawable/main">
+
+       <include android:layout_width="match_parent"
+       		 	android:layout_height="50dp"
+         		layout="@layout/header_titlebar" />
+
+       	 <ListView
+       	     android:id="@+id/list_main_menu"
+       	     android:layout_width="match_parent"
+       	     android:layout_height="438dp"
+       	     android:background="#0000"
+       	     android:layout_weight="1.0"
+       	     android:textColor="@android:color/black" >
+
+         </ListView>
+
+       	 <include
+       	     android:layout_width="match_parent"
+       	     android:layout_height="42dp"
+       	     layout="@layout/footer_bar" />
+ 
+    </LinearLayout>
+
+</RelativeLayout>
